@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Index Page</title>
+    </head>
+    <body>
+        <h1>Student Data</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Fullname</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in data %}
+                <tr>
+                    <td>{{ item.Id }}</td>
+                    <td>{{ item.Fullname }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="{% url 'index' %}">Back to Home</a>
+    </body>
+</html>

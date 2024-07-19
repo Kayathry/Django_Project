@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Index Page</title>
+    </head>
+    <body>
+        <h1>Summary Data</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>School_Id</th>
+                    <th>Sydney_Participant</th>
+                    <th>Sydney_Percentile</th>
+                    <th>Assesment_Areas_Id</th>
+                    <th>Award_Id</th>
+                    <th>Class_Id</th>
+                    <th>Corrcet_answer_percentage_per_class</th>
+                    <th>Correct_Answer</th>
+                    <th>Student_Id</th>
+                    <th>Participant</th>
+                    <th>Student_Score</th>
+                    <th>Subject_Id</th>
+                    <th>Category_Id</th>
+                    <th>Year_level_name</th>
+                    <th>Answer_Id</th>
+                    <th>Correct_Answer_Id</th>
+    
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in data %}
+                <tr>
+                    <td>{{ item.School_Id }}</td>
+                    <td>{{ item.Sydney_Participant }}</td>
+                    <td>{{ item.Sydney_Percentile }}</td>
+                    <td>{{ item.Assesment_Areas_Id }}</td>
+                    <td>{{ item.Award_Id }}</td>
+                    <td>{{ item.Class_Id }}</td>
+                    <td>{{ item.Corrcet_answer_percentage_per_class }}</td>
+                    <td>{{ item.Correct_Answer }}</td>
+                    <td>{{ item.Student_Id }}</td>
+                    <td>{{ item.Participant }}</td>
+                    <td>{{ item.Student_Score }}</td>
+                    <td>{{ item.Subject_Id }}</td>
+                    <td>{{ item.Category_Id }}</td>
+                    <td>{{ item.Year_level_name }}</td>
+                    <td>{{ item.Answer_Id }}</td>
+                    <td>{{ item.Correct_Answer_Id }}</td>
+                    
+
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="{% url 'index' %}">Back to Home</a>
+    </body>
+</html>

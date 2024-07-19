@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Index Page</title>
+    </head>
+    <body>
+        <h1>Select the data to view:</h1>
+        <ul>
+            <li><a href="{% url 'school_model_view' %}">School Data</a></li>
+            <li><a href="{% url 'answers_model_view' %}">Answers Data</a></li>
+            <li><a href="{% url 'subjects_model_view' %}">Subjects Data</a></li>
+            <li><a href="{% url 'summary_model_view' %}">Summary Data</a></li>
+            <li><a href="{% url 'student_model_view' %}">Student Data</a></li>
+            <li><a href="{% url 'assesmentareas_model_view' %}">Assesment Data</a></li>
+            <li><a href="{% url 'awards_model_view' %}">Awards Data</a></li>
+            <li><a href="{% url 'class_model_view' %}">Class Data</a></li>
+        </ul>
+    </body>
+</html>
